@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+}
+.folha{
+  border: 2px solid black;
+  width: 50%;
+  height: 800px;
+  position: absolute;
+  left: 300px;
+}
+.foto{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top:20px;
+    left: 50px;
+}
+.nome{
+    position: absolute;
+    top: 45px;
+    left: 180px;
+}
+.subnome{
+    position:absolute;
+    top: 80px;
+    left: 185px;
+    animation-name: colorirtexto;
+    animation-duration: 10s;
+
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    left: 50px;
+}
+.whatsapp{
+    padding: 10px;
+    background-color: rgb(48, 187, 48);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    position: relative;
+    left:70px;
+    bottom: 10px;
+}
+
+.whatsapp:hover {
+    animation-name: background;
+    animation-duration: 3s;
+}
+p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tamanho-texto, li{
+    width: 550px;
+    text-align: justify;
+    position: relative;
+    left: 50px;
+}
+.foto:hover{
+    animation-name: tornarcinza;    
+    animation-duration: 2s;
+}
+
+@keyframes tornarcinza {
+    from {
+        filter: grayscale(0%);
+    }
+    to {
+        filter: grayscale(100%);
+    }
+}
+@keyframes colorirbotao {
+    0% {
+        color: black;
+    }
+    10%{ 
+        color: red;
+    }
+    20%{
+        color: green;
+    }
+    30%{
+        color: blue;
+    }
+    40%{
+        color: yellow;
+    }
+    50%{
+        color: orange;
+    }
+    60%{
+        color: purple;
+    }
+    70%{
+        color:fuchsia;
+    }
+    80% {
+        color: maroon;
+    }
+    100% {
+        color: black;
+    }
+}
+@keyframes colorirtexto {
+    0% {
+        color: black;
+    }
+    10%{ 
+        color: red;
+    }
+    20%{
+        color: green;
+    }
+    30%{
+        color: blue;
+    }
+    40%{
+        color: yellow;
+    }
+    50%{
+        color: orange;
+    }
+    60%{
+        color: purple;
+    }
+    70%{
+        color:fuchsia;
+    }
+    80% {
+        color: maroon;
+    }
+    100% {
+        color: rgb(216, 216, 216);
+    }
+}
+   
+@keyframes background {
+    0% {
+        background-color: darkgreen;
+    }
+    10%{ 
+        background-color: green;
+    }
+    20%{
+        background-color: limegreen;
+    }
+    30%{
+        background-color: lime;
+    }
+   
+}
+.topobutton {
+    padding: 20px;
+    text-decoration: none;
+    position: absolute;
+    left: 250px;
+    top: 720px;
+    background-color: black;
+    color: var(--button-color);
+    border-radius: 20px;
+    background-color: var(--backgroundbutton-color);
+    font-size:18px;
+
+}
+.topobutton:hover{
+    animation-name: colorirbotao;
+    animation-duration: 5s;
+
+}
+body{
+    color: var(--body-color);
+    background-color: var(--body-bg);
+}
+
+:root{
+    --body-bg: #363434;
+    --body-color: rgb(216, 216, 216);
+    --backgroundbutton-color: rgb(216, 216, 216);
+    --button-color: black;
+
+
+}
+.lightmode:root{
+    --body-bg: snow;
+    --body-color: rgb(0, 0, 0);
+    --backgroundbutton-color: rgb(0, 0, 0);
+    --button-color: white;
+}
+.lightmodebutton{
+    position: absolute;
+    top: 20px;
+    right:30px;
+}
